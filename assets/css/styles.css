@@ -1,0 +1,148 @@
+@import "./reset.css";
+
+.wrapper {
+    width: 100%;
+    height: calc(100vh - 150px);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: relative;
+}
+
+.memoBox {
+    position: relative;
+
+    width: 90%;
+    height: 60px;
+
+    border: 1px solid #eee;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px #eee;
+
+    margin: 10px 50px;
+    padding: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #888;
+
+    transition: 0.5s;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.memoBox:hover {
+    box-shadow: 2px 0px 10px #999;
+}
+
+.memoBox__delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    outline: none;
+    border: none;
+    background: none;
+
+    width: 23px;
+    height: 23px;
+
+    background-color: red;
+    border-radius: 100%;
+    color: #fff;
+    box-shadow: 2px 2px 2px #eee;
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.memoBox__delete:hover {
+    border: 1px solid red;
+    background-color: #fff;
+    color: red;
+}
+
+.createButton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: skyblue;
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.createButton:hover {
+    border: 1px solid skyblue;
+    color: skyblue;
+    background-color: #fff;
+}
+
+.createFrom {
+    margin: 100px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.createFrom__text {
+    width: 90%;
+    height: 45px;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 1px #eee;
+    outline: none;
+
+    resize: none;
+    padding: 7px;
+    margin-top: 10px;
+
+    transition: 0.5s;
+}
+
+.createFrom__text:focus {
+    border: 0.3px solid skyblue;
+}
+
+.createFrom input[type="submit"] {
+    border: none;
+    outline: none;
+    background: none;
+
+    width: 200px;
+    height: 25px;
+
+    border: 0.5px solid skyblue;
+    border-radius: 5px;
+    color: skyblue;
+
+    transition: 0.5s;
+}
+
+.createFrom input[type="submit"]:hover {
+    box-shadow: 0px 0px 5px skyblue;
+} 
+
+.deleteFrom {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

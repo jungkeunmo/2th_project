@@ -1,0 +1,7 @@
+extends ../layouts/base.pug
+
+block content 
+    form.createFrom(action="/memo/create", method="POST")
+        textarea.createFrom__text(name="content" id="content")
+
+        input(type="submit" value="메모작성") 

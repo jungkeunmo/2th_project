@@ -1,0 +1,12 @@
+extends ../layouts/base.pug
+
+block content 
+    section.wrapper 
+        section.memoBox
+            form.deleteFrom(action="/memo/delete" method="POST")
+                input(type="hidden" name="id" id="id" value="realID")
+                input.memoBox__delete(type="submit" value="X")
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            span 2021-09-11
+
+        a.createButton(href="/memo/create") +
